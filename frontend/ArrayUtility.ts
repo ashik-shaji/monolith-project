@@ -14,6 +14,17 @@ export class ArrayUtility {
         }
         return array.length;
     }
+    
+    /**
+     * Finds the sum of three numbers
+     * @param a First number
+     * @param b Second number
+     * @param c Third number
+     * @returns The sum of the three numbers
+     */
+    public static findSumOfThree(a: number, b: number, c: number): number {
+        return a + b + c;
+    }
 }
 
 // Example usage and testing
@@ -26,4 +37,8 @@ if (require.main === module) {
     console.log("String array size:", ArrayUtility.findArraySize(stringArray));
     console.log("Null array size:", ArrayUtility.findArraySize(null));
     console.log("Undefined array size:", ArrayUtility.findArraySize(undefined));
+    
+    // Test the new sum function
+    console.log("Sum of 10, 20, 30:", ArrayUtility.findSumOfThree(10, 20, 30));
+    console.log("Sum of 5, 15, 25:", ArrayUtility.findSumOfThree(5, 15, 25));
 }
