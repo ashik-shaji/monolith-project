@@ -18,7 +18,18 @@ public class ArrayUtility {
     }
     
     /**
-     * Main method for testing the utility function
+     * Finds the sum of three numbers
+     * @param a First number
+     * @param b Second number
+     * @param c Third number
+     * @return The sum of the three numbers
+     */
+    public static int findSumOfThree(int a, int b, int c) {
+        return a + b + c;
+    }
+    
+    /**
+     * Main method for testing the utility functions
      */
     public static void main(String[] args) {
         // Test with different array types
@@ -28,5 +39,9 @@ public class ArrayUtility {
         System.out.println("Integer array size: " + findArraySize(intArray));
         System.out.println("String array size: " + findArraySize(stringArray));
         System.out.println("Null array size: " + findArraySize((Object[]) null));
+        
+        // Test the new sum function
+        System.out.println("Sum of 10, 20, 30: " + findSumOfThree(10, 20, 30));
+        System.out.println("Sum of 5, 15, 25: " + findSumOfThree(5, 15, 25));
     }
 }
